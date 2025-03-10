@@ -16,3 +16,25 @@ body{
     justify-content: center;
     background-color:cornflowerblue ;
 }
+
+#card{
+    height: 450px;
+    width:320px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px;
+    text-align: center;
+}
+
+#card img{
+    height: 50%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+#card h1{
+    font-size: 25px;
+    margin: 10px 0;
+}
