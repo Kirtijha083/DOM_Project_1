@@ -2,7 +2,7 @@ let isStatus = document.querySelector("h5");
 
 let addFrnd = document.querySelector("#add");
 
-let remove = document.querySelector("#remove");
+// let remove = document.querySelector("#remove");
 
 addFrnd.addEventListener("click", () =>{
     isStatus.innerHTML = "Friends";
