@@ -57,7 +57,8 @@ body{
     cursor: pointer;
 }
 
-#card #remove{
+/* this is only for 1st way-->when 2 btn display on page */
+/* #card #remove{
 background-color: #dadada;
 color: #111;
-}
+} */
