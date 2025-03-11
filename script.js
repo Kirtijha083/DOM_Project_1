@@ -1,15 +1,28 @@
 let isStatus = document.querySelector("h5");
 
-let addFrnd = document.querySelector("#add");
+let btn = document.querySelector("#add");
 
-// let remove = document.querySelector("#remove");
+// let remove = document.querySelector("#remove"); //this is only for 1st way-->when 2 btn display on page
 
-addFrnd.addEventListener("click", () =>{
-    isStatus.innerHTML = "Friends";
-    isStatus.style.color = "green";
+let check = 0;
+
+btn.addEventListener("click", () =>{
+    if(check == 0){
+        isStatus.innerHTML = "Friends";
+        isStatus.style.color = "green";
+        btn.innerHTML = "Remove Friend";
+        check = 1;
+    }else{
+        isStatus.innerHTML = "Stranger";
+        isStatus.style.color = "red";
+        btn.innerHTML = "Add Friend";
+        check = 0;
+    }
+    
 });
 
-remove.addEventListener("click", () =>{
-    isStatus.innerHTML = "Stranger";
-    isStatus.style.color = "red";
-});
+// this is only for 1st way-->when 2 btn display on page
+// remove.addEventListener("click", () =>{
+//     isStatus.innerHTML = "Stranger";
+//     isStatus.style.color = "red";
+// });
